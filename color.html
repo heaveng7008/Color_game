@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+     crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+     crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="color.css">
+	
+	<title>Connect-4-Dot</title>
+
+</head>
+<body>
+
+	<div class="container" align="center">
+
+		<h1>Welcome to Connect 4 Dots</h1>
+		<h2>Connect 4 Chips to win</h2>
+		
+		<table class="clicker">
+			<tr>
+				<td><button type="button" onclick="myid(0)">1</button></td>
+				<td><button type="button" onclick="myid(1)">2</button></td>
+				<td><button type="button" onclick="myid(2)">3</button></td>
+				<td><button type="button" onclick="myid(3)">4</button></td>
+				<td><button type="button" onclick="myid(4)">5</button></td>
+				<td><button type="button" onclick="myid(5)">6</button></td>
+				<td><button type="button" onclick="myid(6)">7</button></td>
+				<td><button type="button" onclick="myid(7)">8</button></td>
+				<td><button type="button" onclick="myid(8)">9</button></td>
+				<td><button type="button" onclick="myid(9)">10</button></td>
+				<td><button type="button" onclick="myid(10)">11</button></td>
+				<td><button type="button" onclick="myid(11)">12</button></td>
+				<td><button type="button" onclick="myid(12)">13</button></td>
+				<td><button type="button" onclick="myid(13)">14</button></td>
+			</tr>
+		</table>
+<div class="cpnt">
+		<table class="board">
+			
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr><tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr>
+			<tr>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+				<td><button type="button"></button></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	<script type="text/javascript" src="color.js"></script>
+</body>
+</html>
